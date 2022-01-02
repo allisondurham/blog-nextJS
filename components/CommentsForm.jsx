@@ -37,7 +37,7 @@ const CommentsForm = ({ slug }) => {
         
         } else {
             window.localStorage.removeItem("name", name);
-            window.localStorage.remove("email", email);
+            window.localStorage.removeItem("email", email);
         }
 
         submitComment(commentObj)

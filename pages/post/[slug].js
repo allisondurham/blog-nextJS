@@ -4,7 +4,6 @@ import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm } fr
 
 
 const PostDetails = ({ post }) => {
-    console.log(post);
 
     return (
         <div className="container mx-auto px-10 mb-8">

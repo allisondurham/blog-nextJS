@@ -1,3 +1,9 @@
+npm run dev
+
+first time using   nextjs   graphql   graphcms
+
+
+
 
 resources
 
