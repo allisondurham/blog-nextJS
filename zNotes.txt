@@ -1,0 +1,30 @@
+
+resources
+
+1. tutorial
+https://www.youtube.com/watch?v=HYv55DhgTuA&ab_channel=JavaScriptMastery
+
+2. react
+https://reactjs.org/
+
+3. graphql
+https://graphql.org/code/
+
+4. graph cms
+https://app.graphcms.com
+
+5. next js 
+https://nextjs.org/
+
+6. graphql request
+https://npmjs.com/package/graphql-request
+
+7. api playground - graph cms
+    services for query
+    api access initialize
+
+
+
+
+
+
