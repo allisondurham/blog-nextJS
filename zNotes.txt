@@ -29,7 +29,9 @@ https://npmjs.com/package/graphql-request
     services for query
     api access initialize
 
-
+8. vercel.com
+    deployment!
+    live @  
 
 
 
