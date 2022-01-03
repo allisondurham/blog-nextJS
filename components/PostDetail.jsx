@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from 'react';
 import moment from "moment";
 
@@ -43,6 +44,10 @@ const PostDetail = ({ post }) => {
 
     return (
         <div className="bg-white/90 shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
+            <Head>
+                <title>A. Durham</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className="relative overflow-hidden shadow-md mb-6">
                 <img
                     src={post.featuredImage.url}
