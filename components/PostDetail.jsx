@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from 'react';
 import moment from "moment";
+import Link from "next/link";
 
 const PostDetail = ({ post }) => {
     const getContentFragment = (index, text, obj, type) => {
@@ -75,6 +76,14 @@ const PostDetail = ({ post }) => {
                         <span className="ml-2">
                             {moment(post.createdAt).format("MMM DD, YYYY")}
                         </span>
+                    </div>
+                    <div className="inline items-center justify-center align-middle text-gray-700 ml-6 text.lg">
+                        {post.categories.map((category) =>   
+                            <Link className="" key={category.slug} href={`/category/${category.slug}`}>
+                                <span className="cursor-pointer pl-3 ml-3">
+                                #{category.name}
+                                </span>
+                            </Link>)}        
                     </div>
                 </div>
                 <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>

@@ -37,6 +37,20 @@ const PostCard = ({ post }) => {
                         {moment(post.createdAt).format("MMM DD, YYYY")}
                     </span>
                 </div>
+
+                <div className="flex items-center align-middle mb-1 lg:mb-0 w-full lg:w-auto mr-8">
+
+                    <div className="inline align-middle text-gray-700 ml-6 text.lg">
+                        {post.categories.map((category) =>   
+                            <Link className="inline" key={category.slug} href={`/category/${category.slug}`}>
+                                <span className="cursor-pointer pl-3 mb-3">
+                                #{category.name}
+                                </span>
+                            </Link>)}        
+                    </div>
+
+                </div>
+
             </div>
             <p className=" text-lg text-gray-700 font-normal px-6 lg:px-20 mb-8">{post.excerpt}</p>
             <div className="text-center">

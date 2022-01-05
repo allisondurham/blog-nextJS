@@ -66,7 +66,7 @@ const CommentsForm = ({ slug }) => {
                 <input
                     type="text" ref={nameEl}
                     className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-300  text-gray-700'
-                    placeholder="Name"
+                    placeholder="Name or fake-name"
                     name="name"
                 />
             </div>
@@ -74,7 +74,7 @@ const CommentsForm = ({ slug }) => {
             <input
                     type="text" ref={emailEl}
                     className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-300 text-gray-700'
-                    placeholder="Email"
+                    placeholder="Email - or make up something funny"
                     name="email"
                 />
             </div>
