@@ -12,12 +12,12 @@ const Categories = () => {
     }, []);
     return (
         
-        <div className="bg-white/90 shadow-lg rounded-lg p-8 mb-8 pb-12" >
+        <div className="bg-white/30 backdrop-blur-3xl shadow-lg rounded-lg p-8 mb-8 pb-12" >
         <Head>
             <title>A. Durham</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-            <h3 className="text-xl mb-8 font-semibold border-b pb-4">
+            <h3 className="text-xl mb-8 font-semibold border-b border-stone-700 pb-4">
                 Categories
             </h3>
             {categories.map((category) => (

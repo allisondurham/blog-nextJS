@@ -52,12 +52,12 @@ const CommentsForm = ({ slug }) => {
 
 
     return (
-        <div className='bg-white/90 shadow-lg rounded-lg p-8 pb-12 mb-8'>
+        <div className='bg-white/30 backdrop-blur-3xl shadow-lg rounded-lg p-8 pb-12 mb-8'>
             <h3 className='text-xl mb-8 font-semibold border-b pb-4'>Leave a comment</h3>
             <div className='grid grid-cols-1 gap-4 mb-4'>
                 <textarea
                     ref={commentEl} 
-                    className='p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-300  text-gray-700'
+                    className='p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-stone-200 bg-stone-300  text-stone-700'
                     placeholder="Comment"
                     name="comment"
                     />
@@ -65,7 +65,7 @@ const CommentsForm = ({ slug }) => {
             <div className='grid grid-cols-1 gap-4 mb-4'>
                 <input
                     type="text" ref={nameEl}
-                    className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-300  text-gray-700'
+                    className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-stone-200 bg-stone-300  text-stone-700'
                     placeholder="Name or fake-name"
                     name="name"
                 />
@@ -73,7 +73,7 @@ const CommentsForm = ({ slug }) => {
             <div className='grid grid-cols-1 gap-4 mb-4'>
             <input
                     type="text" ref={emailEl}
-                    className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-300 text-gray-700'
+                    className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-stone-200 bg-stone-300 text-stone-700'
                     placeholder="Email - or make up something funny"
                     name="email"
                 />
@@ -82,14 +82,14 @@ const CommentsForm = ({ slug }) => {
             <div className='grid grid-cols-1 gap-4 mb-4 ml-2'>
                 <div>
                     <input ref={storeDataEl} type="checkbox" id="storeData" name="storeData" value="true" />
-                    <label className='text-gray-500 cursor-pointer ml-3' htmlFor="storeData">Save my email and name for the next time I comment.</label>
+                    <label className='text-stone-500 cursor-pointer ml-3' htmlFor="storeData">Save my email and name for the next time I comment.</label>
                 </div>
             </div>
             {error && <p className='text-xs text-red-500'>All fields are required.</p>}
             <div className='mt-8'>
                 <button 
                     type="button" onClick={handleCommentSubmission}
-                    className='transition duration-500 ease hover:bg-yellow-700 inline-block bg-lime-700 text-lg rounded-full text-white px-8 py-3 cursor-pointer'
+                    className='transition duration-500 ease hover:bg-yellow-700 inline-block bg-lime-700 text-lg rounded-full text-white/60 px-8 py-3 cursor-pointer'
                     >
                         Post Comment
                 </button>

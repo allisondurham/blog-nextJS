@@ -44,7 +44,7 @@ const PostDetail = ({ post }) => {
     };
 
     return (
-        <div className="bg-white/90 shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
+        <div className="bg-white/30 backdrop-blur-3xl shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
             <Head>
                 <title>A. Durham</title>
                 <link rel="icon" href="/favicon.ico" />
